@@ -212,7 +212,6 @@ class RPCClient extends EventEmitter {
       scopes,
       client_id: this.clientId,
       rpc_token: rpcToken,
-      redirect_uri: redirectUri,
     });
 
     const response = await this.fetch('POST', '/oauth2/token', {
